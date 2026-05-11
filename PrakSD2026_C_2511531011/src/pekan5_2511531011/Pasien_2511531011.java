@@ -25,10 +25,10 @@ public class Pasien_2511531011 {
 	public Pasien_2511531011 getPointer_2511531011() { return next_1011; } //get pointer
 	
 	//method setter
-	public void setNama_2511531011() { this.namaPasien_1011 = namaPasien_1011; } //set nama
-	public void setKeluhan_2511531011() { this.keluhan_1011 = keluhan_1011; } //set keluhan
-	public void setNomor_2511531011() { this.nomor_1011 = nomor_1011; } //set nomor
-	public void setPointer_2511531011() { this.next_1011 = next_1011; } //set pointer
+	public void setNama_2511531011(String nama_1011) { this.namaPasien_1011 = nama_1011; } //set nama
+	public void setKeluhan_2511531011(String keluhan_1011) { this.keluhan_1011 = keluhan_1011; } //set keluhan
+	public void setNomor_2511531011(int nomor_1011) { this.nomor_1011 = nomor_1011; } //set nomor
+	public void setPointer_2511531011(Pasien_2511531011 next_1011) { this.next_1011 = next_1011; } //set pointer
 	
 	//untuk cetak data pasien
 	@Override

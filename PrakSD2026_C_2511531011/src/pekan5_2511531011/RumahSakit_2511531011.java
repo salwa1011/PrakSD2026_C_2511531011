@@ -37,7 +37,7 @@ public class RumahSakit_2511531011 {
                 curr_1011 = curr_1011.getPointer_2511531011();
             }
             // sambungkan node terakhir ke node baru
-            curr_1011.setPointer_2511531011();
+            curr_1011.setPointer_2511531011(baru);
         }
 
         jmlPasien_1011++;
