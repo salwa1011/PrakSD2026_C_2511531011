@@ -9,7 +9,8 @@ public class AntrianLoket_2511531011 {
 	
 	public AntrianLoket_2511531011(int capacity_1011) {
 		this.capacity_1011 = capacity_1011;
-		front_1011 = this.size_1011;
+		front_1011 = 0;
+		size_1011 = 0;
 		rear_1011 = capacity_1011 - 1;
 		array_1011 = new String [this.capacity_1011];
 	}
@@ -42,15 +43,21 @@ public class AntrianLoket_2511531011 {
 	
 		//mencetak elemen antrian
 	void display_2511531011() {
-		int i;
-		if (front_1011 == rear_1011) {
+		if (isEmpty_2511531011(this)) {
 			System.out.printf("\nAntrian Kosong\n");
 			return;
 		}
 		//kunjungi dari belakang dan cetak
-		for (i = front_1011; i < rear_1011; i++) {
-			System.out.printf(" %d <-- ", array_1011[i]);
+		int i = front_1011;
+		for (int count = 0; count < size_1011; count++) {
+			System.out.printf(array_1011[i]);
+			if (count < size_1011 - 1) {
+				System.out.print("-->");
+			}
+			i = (i+1) % capacity_1011;
 		}
+		
+		System.out.println();
 		return;
 	}
 	
